@@ -1,7 +1,7 @@
 <?php
 #--------------Edit only this----------------
 //Set API key
-$api_key = "418b82e1360183ad146515f3e765411b6c6p73b4";
+$api_key = "418b82e1360183ad146xxxxxxxx11b6c6p73b4";
 $inc_timeout = 60; // 60/120/180/240
 
 //Generate JSON AUTH string
@@ -16,13 +16,13 @@ $data = json_encode([
 	]);
 
 //Set API url
-$url_upload = "http://dyncheck.loc/api/upload_and_scan";
+$url_upload = "https://dyncheck.loc/api/upload_and_scan";
 #--------------------------------------------
 
 
 function get_info1($api, $file_id)
 {
-	$url_get_info = "http://dyncheck.loc/api/get_info";
+	$url_get_info = "https://dyncheck.loc/api/get_info";
 
 	$param_data = json_encode([
 		'api' => $api_key,
